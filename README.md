@@ -7,6 +7,8 @@ CuboCube uses PHP as the primary programming language and MySQL as the database 
 Setup instructions:
 * You will require PHP server such as Apache. You can set the public entry point to be the root of this repository.
 * You will require a MySQL server for the database backend. After you have created your MySQL database you can import the Schema by running the SQL located in the schema.sql file available in this repository. We like to use phpMyAdmin for database administration but you are free to use any tool you are comfortable with.
+* Update db.php with your database information.
+* You should now be able to access your fork of CuboCube and should be able to create your own user using the UI.
 
 If you have any questions you can reach us using our contact page. We will try our best to get to your inquiries.
 
