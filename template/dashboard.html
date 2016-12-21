@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{TOP-TITLE-PLACEHOLDER}</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{URL-BASE}css/style.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'> -->
+	<link rel="Shortcut Icon" href="{URL-BASE}img/favicon.ico">
+	<link rel="icon" href="{URL-BASE}img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="{URL-BASE}themes/base/jquery.ui.all.css">
+	<link rel="stylesheet" href="{URL-BASE}css/jquery.lightbox-0.5.css">
+	<!-- JS -->
+	<script src="{URL-BASE}js/jquery-1.7.2.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.core.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.widget.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.mouse.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.draggable.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.position.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.resizable.js"></script>
+	<script src="{URL-BASE}js/ui/jquery.ui.dialog.js"></script>
+	<script src="{URL-BASE}js/jquery.jeditable.js"></script>
+	<script src="{URL-BASE}js/jquery.flip.min.js"></script>
+	<script src="{URL-BASE}js/jquery.lightbox-0.5.min.js"></script>
+	<script src="{URL-BASE}js/jquery.timeago.js"></script>
+	<script src="{URL-BASE}js/jquery-animate-colors.js"></script>
+	<script src="{URL-BASE}js/ckeditor/ckeditor.js"></script>
+	<script src="{URL-BASE}js/ckeditor/adapters/jquery.js"></script>
+	<script src="{URL-BASE}js/functions.js"></script>
+	<script src="{URL-BASE}js/dashboard.js"></script>
+</head>
+<body>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=8564864; 
+	var sc_invisible=1; 
+	var sc_security="6e08cc7e"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="free hit
+	counters" href="http://statcounter.com/"
+	target="_blank"><img class="statcounter"
+	src="http://c.statcounter.com/8564864/0/6e08cc7e/1/"
+	alt="free hit counters"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+
+	<div id="wrapper">
+	<div id="bg-wrapper"></div>
+
+	<div id="top-bar" >
+		{TOP-BAR-HERE}
+	</div> <!-- end top-bar -->
+	
+	
+	
+	<div id="header-with-tabs">
+	
+	    <div id="chapter-control-container" class="page-full-width cf">
+		    <div id="tab-container">
+			<div id="left-arrow-button"><div id="left-arrow-char">&lt;</div></div>
+	
+		    <div id="right-arrow-button"><div id="right-arrow-char">&gt;</div></div>
+			<div id="tab-inner-container">
+			    <div id="tab-scroll-window">
+				<div id="tab-scroll-wrap">
+			<ul id="tabs">
+				{CHAPTERS-HERE}			
+			    </ul>
+			</div>
+			</div>
+			</div>
+	    
+
+		    </div>
+		
+			 <!--<a href="#" id="logo-small" class="fr" ><img src="logo.png" alt="Logo" /></a> -->
+		</div>
+		
+	</div> <!-- end header -->
+	
+	
+	<div id="content-full-width">
+	
+		<div class="page-full-width cf">
+
+			
+			<div class="side-menu fl">
+			
+				<h3>Sections</h3>
+				<ul>
+					{SECTIONS-HERE} 
+				</ul>
+
+			</div> <!-- end side-menu -->
+			
+			
+			<div class="side-content fr">
+							
+				{DASHBOARD-MAIN-HERE}
+				
+				
+				
+			</div> <!-- end side-content -->
+			
+		</div> <!-- end page-full-width -->
+		
+	</div> <!-- end content-full-width -->
+
+	<div id="push"></div>
+
+	</div> <!-- end wrapper -->
+	
+	<div id="normal-footer">
+		<p>
+			<a id="view-book-contributors-{CUBOBOOK-ID}" class="view-book-contributors" href="#">Book Contributors</a> of <a href="dashboard.php?c={CUBOBOOK-ID}">{CUBOBOOK-NAME}</a>.
+		</p>
+		{CUBOBOOK-USER-ROLE-INFO}
+		<p>CuboCube software is open-source. The source code is available at our public <a href="https://github.com/cubocube?tab=repositories">Github repository</a>.</p>
+		<p>&copy; Copyright 2013-2016 <a href="index.php">CuboCube</a>. <a href="contactus.php">Contact us.</a></p>
+                <br />
+	</div> <!-- end footer -->
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CuboCube - The Free Social Knowledgebase</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="template/css/style.css">
+	<link rel="stylesheet" href="template/themes/base/jquery.ui.all.css">
+	<link rel="stylesheet" href="template/css/colorbox.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+	<link rel="Shortcut Icon" href="template/img/favicon.ico">
+	<link rel="icon" href="template/img/favicon.ico" type="image/x-icon">
+
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="template/js/ui/jquery.ui.core.js"></script>
+	<script src="template/js/functions.js"></script>
+	<script src="template/js/jquery.colorbox-min.js"></script>
+	<script src="template/js/newfront.js"></script>
+</head>
+<body>
+
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=8564864; 
+	var sc_invisible=1; 
+	var sc_security="6e08cc7e"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<!-- End of StatCounter Code for Default Guide -->
+
+	<div id="top-bar-front" >
+		
+
+		<div class="almost-full-width cf">
+			<a href="index.php"><img src="template/img/logo-white.png"/></a>
+
+			<div id="login-form-wrap">
+				<form id="login-front">
+					<div class="login-block">
+						<label for="login"><i class="icon-user"></i>Username</label>
+						<input type="text" name="login" id="username-login-frontpage" tabindex=1>
+						<br/><a href="forgotpassword.php">Forgot password?</a><!--<input type="checkbox" name="remember" value="true">Remember me-->
+					</div>
+					<div class="login-block">
+						<label for="password"><i class="icon-lock"></i>Password</label>
+						<input type="password" name="password" tabindex=2>
+						<br/><a href="register.php?s=cc">Sign up!</a>
+					</div>
+					<div class="login-block">
+						<br/>
+						<input class="log-button log-button-alt" type="submit" name="submit" value="Log in" tabindex=3>
+						<br/>
+					</div>
+
+				</form>
+			</div> <!-- end login-form-wrap-->
+		</div> <!-- end almost-full-width -->
+
+						
+	</div> <!-- end top-bar -->
+
+	
+	<!-- MAIN CONTENT -->
+	<div id="welcome-content">
+	<div class="almost-full-width cf" id="top-page">
+		<div id="welcome-message">
+				<span class="big-text">Learn better with a </span><br/>
+			<span class="big-text-alt">Free Social Knowledgebase</span>
+			<span class="big-text">.</span>
+					
+					<br/><br/><br/>
+		<!--<span class="big-text-alt">Let's change that.</span><br/></br/><br/>-->
+		<span class="medium-text">
+		CuboCube is the next generation in learning technology.  With CuboCube, you can collaboratively create and enjoy quality content.  
+</span><br/><br/><br/>
+				<a href="register.php?s=cc"><div class="signup-text log-button">Sign me up!</div></a>
+				<div style="display: none">
+					<div id="signup-dialog">Hello world!</br></div>
+				</div>
+		</div>
+
+		<div id="welcome-image">
+				<!--<img src="template/img/logo-bg.png" style="position:absolute;top: 75px; left: 89px"/>-->
+				<img id="book-signup" src="template/img/book.png"/>
+				<img id="arrow-signup" src="template/img/arrow.png"/>
+				<img id="arrow-signup-mirror" src="template/img/arrow-mirror.png"/>
+				<div id="lightbulb-signup"></div>
+		</div>
+	</div>
+	</div>
+	<div class="info-content">
+	<div class="almost-full-width cf">
+		<span class="header-text-1">How CuboCube works:</span>
+		<div id="diagram-show">
+			<img src="template/img/cubocubeworks.png"/>
+			<div id="left-diagram-caption" class="diagram-caption"><span class="diag-heading">1) Import Your Content</span><br/>
+				Upload your premade content/outline into CuboCube with just a few clicks.
+			</div>
+			<div id="middle-diagram-caption" class="diagram-caption"><span class="diag-heading">2) Edit Collaboratively</span><br/>
+				Allow your peers to edit and annotate your work, adding material and clarifying hard concepts. 
+			</div>
+			<div id="right-diagram-caption" class="diagram-caption"><span class="diag-heading">3) Discuss and Share</span><br/>
+				Get feedback on your content and share the knowledge in your network.
+			</div>
+		</div>
+
+		<div class="header-text-2" id="slogan-1">Learning is a social process, <br/> so let's <span class="header-text-2-alt">make content social</span>.</div>
+		<a href="register.php?s=cc"><div class="signup-text-alt log-button-alt-2">Sign Up for Free!</div></a>
+	</div>
+	</div>
+	<div id="front-content">
+			
+		
+	<div class="almost-full-width cf">
+		<span class="header-text-1">CuboCube is for:</span>
+
+		<div>
+			<div id="tab-front-container">
+				<ul id="tab-front">
+					<li><a href="#fragment-1" class="selected"><span>Students</span></a></li>
+					<li><a href="#fragment-2"><span>Instructors</span></a></li>
+					<li><a href="#fragment-3"><span>Professionals</span></a></li>
+				</ul>
+			</div>
+			<div id="module-container">
+				<img src="template/img/tab-indicator.png" id="tab-indicator"/>
+				<div id="fragment-1" class="front-module">
+					<div class="left-list">
+						<ul class="check-list">
+							<li>Import, annotate, and edit PDFs, text, images, or video</li>
+							<li>Upload your class notes and work together to make them complete
+							<li>Collaboratively make new content with your peers, or annotate what you're reading</li>
+							<li>Find out what people in your network are making and learning</li>
+						</ul>
+						<br/>
+					</div>
+					<div class="right-list">
+						<ul class="check-list">
+							<li>Form discussions about your content and content you enjoy</li>
+							<li>Enjoy the growing free repository of books, videos, and other content within CuboCube</li>
+							<li>Absolutely FREE to use</li>
+						</ul>
+						<br/>
+					</div>
+				</div>
+				<div id="fragment-2" class="front-module">
+					<div class="left-list">
+						<ul class="check-list">
+							<li>Let students point out and clarify personally challenging topics</li>
+							<li>Let students remove roadblocks they encounter when learning new material</li>
+							<li>Allow students to annotate text and video</li>
+							<li>Build an understandable knowledgebase built by students, for students</li>
+						</ul>
+						<br/>
+					</div>
+					<div class="right-list">
+						<ul class="check-list">
+							<li>Bring the power of social to the online classroom</li>
+							<li>Take advantage of the growing repository of material within CuboCube</li>
+							<li>Easily keep material up-to-date</li>
+							<li>Absolutely FREE to use</li>
+						</ul>
+						<br/>
+					</div>
+
+
+				</div>
+				<div id="fragment-3" class="front-module">
+					<div class="left-list">
+						<ul class="check-list">
+							<li>Improve productivity with social documentation</li>
+							<li>Easily import documentation you've already made</li>
+							<li>Let trainees improve tutorials as they go through them</li>
+						</ul>
+						<br/>
+					</div>
+					<div class="right-list">
+						<ul class="check-list">
+							<li>Manage content more easily with our integrated platform</li>
+							<li>Let authors and readers cooperate and build better, tailored content</li>
+							<li>Absolutely FREE to use</li>
+						</ul>
+						<br/>
+					</div>
+				</div>
+				<!--<div id="fragment-4" class="front-module">
+					<div class="left-list">
+						<ul class="check-list">
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+						</ul>
+						<br/>
+					</div>
+					<div class="right-list">
+						<ul class="check-list">
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+							<li>Hello world hello world!</li>
+						</ul>
+						<br/>
+					</div>
+				</div>-->
+
+			</div>
+		</div>
+
+				<div class="header-text-2" id="slogan-2">Learning has stayed the same for hundreds of years. <br/> <span class="header-text-2-alt">Let's change that</span>.</div>
+
+				<a href="register.php?s=cc"><div class="signup-text-alt log-button-alt-2">Sign Up for Free!</div></a>
+
+
+	
+	</div> <!-- end full-width -->
+		
+<!--
+ 		<form action="" method="post" id="register-form">
+
+			<fieldset>
+				<h1>Register for an account</h1>
+				<p>
+					<label  for="register-username">Username</label>
+					<input type="text" id="register-username" name="username" class="round full-size-input" autofocus />
+				</p>
+
+				<p>
+					<label  for="register-password">Password</label>
+					<input type="password" id="register-password" name="password" class="round full-size-input" />
+				</p>
+
+				<p>
+					<label  for="register-email">Email</label>
+					<input type="text" id="register-email" name="email" class="round full-size-input" />
+				</p>
+
+				<input type="submit" value"Login" class="button round blue text-upper image-right ic-right-arrow" id="btn-register"/>
+
+				<p>
+					<div class="error-box round" id="email-error">Invalid email address.</div>
+				</p>		
+
+				<p>
+					<div class="error-box round" id="username-error">Invalid username. Your username should be between 4 to 20 characters.</div>
+				</p>
+
+				<p>
+					<div class="error-box round" id="password-error">Invalid password. Your password should be between 4 to 20 characters.</div>
+				</p>
+				
+				<p>
+					<div class="information-box round" id="registration-response">Once you fill out the form, you will receive a confirmation email.</div>
+				</p>
+                
+                <p>
+					<div class="error-box round" id="registration-response-error">Error.</div>
+				</p>
+                    
+			</fieldset>
+
+		</form> -->
+
+	</div> <!-- end content -->
+	
+	
+	
+	<div class="footer">
+
+		<div class="almost-full-width cf" id="footer-nav">
+			<img src="template/img/logo-white-small.png"/>
+
+		</div> <!-- end almost-full-width -->
+	
+	        <p>CuboCube software is open-source. The source code is available at our public <a href="https://github.com/cubocube?tab=repositories">Github repository</a>.</p>	
+		<p>&copy; Copyright 2013-2016 <a href="index.php">CuboCube</a>. <a href="contactus.php">Contact us.</a></p>
+		<p><a href="dashboard.php?c=1">Cancer Genetics Ebook</a> | <a href="dashboard.php?c=103">Open Genetics Ebook</a></p>
+	</div> <!-- end footer -->
+	
+	
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cancer Ebook - Dashboard</title>
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{URL-BASE}css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet'>
+	
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://localhost:8888/playground/ebookwiki/ui/jquery.ui.core.js"></script>
+	<script src="http://localhost:8888/playground/ebookwiki/ui/jquery.ui.widget.js"></script>
+	<script src="http://localhost:8888/playground/ebookwiki/ui/jquery.ui.mouse.js"></script>
+	<script src="http://localhost:8888/playground/ebookwiki/ui/jquery.ui.sortable.js"></script>
+	
+	<style>
+	.column {float: left; padding-bottom: 100px; }
+	.portlet { margin: 0 1em 1em 0; }
+	.portlet-header { margin: 0.3em; padding-bottom: 4px; padding-left: 0.2em; }
+	.portlet-header .ui-icon { float: right; }
+	.portlet-content { padding: 0.4em; }
+	.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
+	.ui-sortable-placeholder * { visibility: hidden; }
+	</style>
+	
+	<script>
+		$(function() {
+			$( ".column" ).sortable({
+				connectWith: ".column"
+			});
+
+			$( ".portlet" ).addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+				.find( ".portlet-header" )
+					.addClass( "ui-widget-header ui-corner-all" )
+					.prepend( "<span class='ui-icon ui-icon-minusthick'></span>")
+					.end()
+				.find( ".portlet-content" );
+
+			$( ".portlet-header .ui-icon" ).click(function() {
+				$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
+				$( this ).parents( ".portlet:first" ).find( ".portlet-content" ).toggle();
+			});
+
+			$( ".column" ).disableSelection();
+		});
+		</script>
+</head>
+<body>
+
+	<div id="top-bar" >
+		<div class="page-full-width cf">
+			
+			<ul id="nav" class="fl">
+			<li class="v-sep"><a href="#" class="button round dark image-left ic-left-arrow">Home</a></li>
+			<li>
+				<a href="#" class="button round dark image-left ic-menu-user">Logged in as <strong>{YOUR-NAME}</strong></a>
+				<ul>
+					<li><a href="#">User profile</a></li>
+					<li><a href="#">Change password</a></li>
+					<li><a href="#">Third link</a></li>
+				</ul>
+			</li>
+			<li class="v-sep"><a href="#" class="button round dark image-left ic-menu-notification-active">3 new updates</a></li>
+			<li><a href="#" class="button round dark image-left ic-menu-settings">Settings</a></li>
+			<li><a href="#" class="button round dark image-left ic-menu-log-out">Log out</a></li>
+
+			</ul>
+			
+			<form action="#" id="search-form" class="fr">
+				<fieldset>
+					<input type="text" id="search-keyword" placeholder="Search..." class="button round dark image-right ic-search" />
+					<input type="hidden" value="submit" />
+				</fieldset>
+			</form>
+		</div> <!-- end page-full-width -->
+				
+	</div> <!-- end top-bar -->
+	
+	
+	
+	<div id="header-with-tabs">
+	
+		<div class="page-full-width cf">
+		
+			<ul id="tabs">
+				<li><a href="#" class="dashboard-tab active-tab">Dashboard</a></li>
+				<li><a href="#">Second tab</a></li>
+				<li><a href="#">Third tab</a></li>			
+			</ul>
+		
+			 <!--<a href="#" id="logo-small" class="fr" ><img src="logo.png" alt="Logo" /></a> -->
+			 <a href="login.html"><div id="logo-post">cube</div><div id="logo-pre">cubo</div></div></a>
+			 		 
+		</div>
+		
+	</div> <!-- end header -->
+	
+	
+	
+	<div id="content-full-width">
+	
+		<div class="page-full-width cf">
+			
+			<div class="side-menu fl">
+			
+				<h3>Side menu</h3>
+				<ul>
+					<li><a href="#">Side menu link</a></li>
+					<li><a href="#">Side menu link2</a></li>
+					<li><a href="#">Side link 3</a></li> 
+				</ul>
+			
+			</div> <!-- end side-menu -->
+			
+			
+			<div class="side-content fr">
+			
+				
+				
+				<div class="content-module">
+					<div class="content-module-heading cf">					
+					    <h3 class="fl">Form elements</h3>
+					</div>
+					<div class="content-module-main cf">
+					    
+					</div>
+				</div> <!-- end content module -->
+				
+				<div class="column">
+				
+					<div class="half-size-column fl portlet">
+					   <div class="content-module">			
+						    <div class="content-module-heading cf">
+							    <h3 class="fl portlet-header">A half size box</h3>
+							</div>
+                        
+				    
+	                        <div class="content-module-main portlet-content">
+	                            <div class="information-box round">
+	                                This is an information box. More text can be added.
+	                            </div>
+	                            <div class="error-box round">
+	                                This is an error box. More text can also be added.
+	                            </div>
+	                            <div class="confirmation-box round">
+	                                This is a confirmation box. More text can be added like this.
+	                            </div>
+	                            <div class="warning-box round">
+	                                This is a warning box. More text here. 
+	                            </div>
+	                        </div>
+					    </div>
+					</div>
+				
+					<div class="half-size-column portlet fl">
+					    <div class="content-module">	
+						    <div class="content-module-heading cf">
+							    <h3 class="fl portlet-header">Another half size box</h3>				    
+							</div>
+                        
+	                        <div class="content-module-main cf portlet-content">
+	                            <ul class="temporary-button-showcase">
+	                                <li><a href="#" class="button round blue image-right text-upper ic-add">Add</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-edit">Edit</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-delete">Delete</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-download">Download</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-upload">Upload</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-favorite">Favorite</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-print">Print</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-search-white">Search</a></li>
+	                            </ul>
+	                        </div>
+					    </div>
+					</div>
+				</div>
+				
+				
+				<div class="column">
+				
+					<div class="half-size-column fl portlet">
+					   <div class="content-module">			
+						    <div class="content-module-heading cf">
+							    <h3 class="fl portlet-header">A half size box</h3>					    
+							</div>
+                        
+				    
+	                        <div class="content-module-main portlet-content">
+	                            <div class="information-box round">
+	                                This is an information box. More text can be added.
+	                            </div>
+	                            <div class="error-box round">
+	                                This is an error box. More text can also be added.
+	                            </div>
+	                            <div class="confirmation-box round">
+	                                This is a confirmation box. More text can be added like this.
+	                            </div>
+	                            <div class="warning-box round">
+	                                This is a warning box. More text here. 
+	                            </div>
+	                        </div>
+					    </div>
+					</div>
+				
+					<div class="half-size-column portlet fr">
+					    <div class="content-module">	
+						    <div class="content-module-heading cf">
+							    <h3 class="fl portlet-header">Another half size box</h3>					    
+							</div>
+                        
+	                        <div class="content-module-main cf portlet-content">
+	                            <ul class="temporary-button-showcase">
+	                                <li><a href="#" class="button round blue image-right text-upper ic-add">Add</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-edit">Edit</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-delete">Delete</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-download">Download</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-upload">Upload</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-favorite">Favorite</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-print">Print</a></li>
+	                                <li><a href="#" class="button round blue image-right text-upper ic-search-white">Search</a></li>
+	                            </ul>
+	                        </div>
+					    </div>
+					</div>
+				</div>
+				
+			
+			</div> <!-- end side-content -->
+					
+		</div>	
+	
+	</div> <!-- end content -->
+	
+	
+	
+	<div id="footer">
+	
+		<p>&copy;Copyright 2012 <a href="#">Wasserman Lab</a>. All rights reserved.</p>
+	
+	</div> <!-- end footer -->
+	
+	
+
+</body>
+</html>
